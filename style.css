@@ -384,3 +384,46 @@ main > section:nth-child(2) p {
 .contatti-auto a:hover {
     text-decoration: underline;
 }
+/* Foto dettagli auto - responsive */
+.car-detail-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* Adattamento per telefoni */
+@media (max-width: 700px) {
+    .car-detail {
+        width: calc(100% - 30px);
+        padding: 15px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    .car-detail-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px auto;
+    }
+}
+.car-detail-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    .car-detail-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
