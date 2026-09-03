@@ -395,14 +395,12 @@ main > section:nth-child(2) p {
     margin-bottom: 12px;
     } 
 
-
-
 /* Adattamento per telefoni */
 @media (max-width: 700px) {
     .car-detail {
         width: calc(100% - 30px);
         padding: 15px;
-        margin: 20px auto;
+        margin: 30px auto;
         box-sizing: border-box;
     }
     }
