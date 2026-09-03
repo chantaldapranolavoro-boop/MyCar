@@ -388,12 +388,12 @@ main > section:nth-child(2) p {
 /* Foto dettagli auto - responsive */
 .car-detail-image {
     width: 100%;
-    max-width: 100px;
+    max-width: 800px;
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
-    margin-bottom: 0 auto 12px auto;
+    margin-bottom: 12px;
     } 
 
 
