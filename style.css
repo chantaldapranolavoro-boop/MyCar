@@ -395,16 +395,7 @@ main > section:nth-child(2) p {
     object-fit: contain;
 }
 
-/* Foto dettagli auto - responsive */
-.car-detail-image {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-    object-fit: contain;
-}
+
 
 /* Adattamento per telefoni */
 @media (max-width: 700px) {
