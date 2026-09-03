@@ -388,7 +388,7 @@ main > section:nth-child(2) p {
 /* Foto dettagli auto - responsive */
 .car-detail-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 100px;
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
