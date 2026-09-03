@@ -388,13 +388,42 @@ main > section:nth-child(2) p {
 /* Foto dettagli auto - responsive */
 .car-detail-image {
     width: 100%;
-    max-width: 600px;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
-    margin-bottom: 0 auto 15px auto;
-    } 
+}
+
+/* Galleria nella pagina Dettagli */
+section:has(.car-detail-image) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+/* Testi e pulsanti sotto la galleria */
+section:has(.car-detail-image) h2,
+section:has(.car-detail-image) p,
+section:has(.car-detail-image) h3,
+section:has(.car-detail-image) button,
+section:has(.car-detail-image) .contatti-auto {
+    grid-column: 1 / -1;
+}
+
+/* Telefono */
+@media (max-width: 700px) {
+    section:has(.car-detail-image) {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .car-detail-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+}
 
 /* Adattamento per telefoni */
 @media (max-width: 700px) {
